@@ -47,17 +47,6 @@ alert http any any -> any any (http.uri; content:"/admin"; msg:"SOC LAB Suspicio
 
 Rules are stored in `rules/custom-rules.md`.
 
-## Key Evidence
-
-- `09-eve-json-alert.png` — ICMP EVE JSON alert
-- `10-port-scan-detection.png` — TCP SYN scan alerts
-- `11-suspicious-http-detection.png` — HTTP `/admin` detection
-- `12-incident-001-evidence.png` — ICMP incident evidence
-- `13-incident-002-evidence.png` — port scan incident evidence
-- `14-incident-003-evidence.png` — suspicious HTTP incident evidence
-
-Screenshots `01–08` were created during the lab but their individual source files were not available in the final chat workspace, so they are not fabricated here. Copy the original files into `screenshots/` before publishing if you want the full 01–15 screenshot sequence.
-
 ## Validation Commands
 
 Test Suricata configuration:
@@ -107,7 +96,6 @@ suricata-soc-lab/
 ├── screenshots/
 ├── docs/
 │   └── lessons-learned.md
-└── .gitignore
 ```
 
 ## Scope & Safety
